@@ -114,6 +114,6 @@ void printMousePos(int x, int y)
 
 void printStatus()
 {
-	mvprintw(LINES - 1, 0, "Press q to exit");
-	refresh();
+  mvprintw(LINES - 1, 0, "Press q to exit");
+  refresh();
 }
