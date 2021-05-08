@@ -12,7 +12,7 @@ int selectingVolume = 0;
 int main()
 {
   // setup ncures
-	initscr();
+  initscr();
   cbreak();
   noecho();
   keypad(stdscr, TRUE);
@@ -29,12 +29,12 @@ int main()
   printStatus();
 
   // main loop
-	int ch;
+  int ch;
   MEVENT mevent;
-	while((ch = getch()) != 'q')
-	{
+  while((ch = getch()) != 'q')
+  {
     switch(ch)
-		{
+    {
       case KEY_UP:
         if (selectingVolume == 0) break;
         selectingVolume--;
@@ -63,13 +63,13 @@ int main()
           printVolume();
         }
         break;
-		}
-	}
+    }
+  }
 
   // cleanup
-	endwin();
+  endwin();
 
-	return 0;
+  return 0;
 }
 
 void printVolume()

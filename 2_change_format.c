@@ -13,7 +13,7 @@ int attridx = 0;
 int main()
 {
   // setup ncurses
-	initscr();
+  initscr();
   cbreak();
   noecho();
   curs_set(FALSE);
@@ -30,7 +30,7 @@ int main()
 
   // main loop
   int ch;
-	while((ch = getch()) != 'q') {
+  while((ch = getch()) != 'q') {
     switch (ch) {
       case 0x20:
         attridx = (attridx + 1) % (sizeof(ATTR_SET) / sizeof(int));
@@ -40,7 +40,7 @@ int main()
   }
 
   // cleanup
-	endwin();
+  endwin();
 
   return 0;
 }
@@ -53,7 +53,7 @@ void printMessage()
   mvprintw(2, 17, "LLT");
   attrset(A_NORMAL);
   mvprintw(2, 20, " !!");
-	refresh();
+  refresh();
 }
 
 void printStatus()

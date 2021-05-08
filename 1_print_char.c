@@ -15,7 +15,7 @@ const int originy = 2;
 int main()
 {
   // setup ncurses
-	initscr();
+  initscr();
   cbreak();
   noecho();
   curs_set(FALSE);
@@ -25,10 +25,10 @@ int main()
   printCharacters();
 
   // main loop
-	while(getch() != 'q') {}
+  while(getch() != 'q') {}
 
   // cleanup
-	endwin();
+  endwin();
 
   return 0;
 }
