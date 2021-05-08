@@ -11,7 +11,7 @@ int selectingVolume = 0;
 
 int main()
 {
-  // setup ncures
+  // setup ncurses
   initscr();
   cbreak();
   noecho();
